@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(210, 216, 214);
+  padding: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Main div styling */
+#main {
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 15px 15px 30px black;
+  color: rgb(210, 216, 214);
+}
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 0px 30px;
+}
+.survey-type {
+  width: 150px;
+  text-align: center;
+}
+
+/* Styling Form */
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 35px 30px;
+  row-gap: 15px;
+  grid-auto-rows: minmax(35px, auto);
+}
+/* Labels */
+label {
+  align-self: center;
+}
+/* inputs styling */
+input,
+textarea {
+  box-shadow: 1px 1px 3px rgba(131, 130, 130, 0.616);
+  padding-left: 10px;
+}
+/* Radio Buttons & Checkbox Styling */
+div > input {
+  margin: 10px 5px;
+  background: transparent;
+  box-shadow: none;
+}
+div > input:hover {
+}
+#sunny {
+  margin-left: 60px;
+}
+#female {
+  margin-left: 90px;
+}
+/* Rate Buttons Styling */
+.rate {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px white;
+  color: rgb(210, 216, 214);
+  padding: 0;
+}
+.rate:nth-child(1):hover {
+  border: 3px solid rgb(255, 4, 4);
+}
+.rate:nth-child(2):hover {
+  border: 3px solid rgb(253, 215, 0);
+}
+.rate:nth-child(3):hover {
+  border: 3px solid rgb(0, 255, 242);
+}
+.rate:nth-child(4):hover {
+  border: 3px solid rgb(98, 0, 255);
+}
+.rate:nth-child(5):hover {
+  border: 3px solid rgb(19, 163, 14);
+}
+/* .rate:focus {
+  background-color: aqua;
+} */
+/* .rate:active {
+  background-color: rgba(183, 192, 192, 0.835);
+} */
+/* #comment {
+  height: 80px;
+} */
+#submit {
+  grid-column: 2/3;
+  grid-row: 9/10;
+  width: 120px;
+  justify-self: right;
+  font-size: 12px;
+  font-weight: bold;
+  /* border-radius: 30px; */
+  border: 3px double goldenrod;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px 4px rgb(223, 172, 5);
+}
+#submit:hover {
+  border: 3px solid goldenrod;
+  box-shadow: -2px -2px 4px rgb(223, 172, 5);
+}

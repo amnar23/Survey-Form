@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>&#9730; Umbrella Co.</h1>
+        <p class="survey-type">Customer Satisfaction Survey</p>
+      </header>
+      <article>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name here" />
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age here" />
+          <label>Gender</label>
+          <div>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+          </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email here" />
+          <label>When do you use Umbrellas?</label>
+          <div>
+            <input type="checkbox" id="rainy" name="umb" />
+            <label for="rainy">Rainy day</label>
+            <input type="checkbox" id="sunny" name="umb" />
+            <label for="sunny">Sunny day</label>
+          </div>
+          <label>Which of our umbrella you own?</label>
+          <select id="product" placeholder="Choose">
+            <option value="Premium Umbrella"></option>
+            <option value="Ultimate Umbrella"></option>
+            <option value="Shady Umbrella"></option>
+          </select>
+          <label>How do you rate our Umbrellas?</label>
+          <div>
+            <input type="button" value="1" class="rate" />
+            <input type="button" value="2" class="rate" />
+            <input type="button" value="3" class="rate" />
+            <input type="button" value="4" class="rate" />
+            <input type="button" value="5" class="rate" />
+          </div>
+          <label for="comment">Additional Comments</label>
+          <textarea
+            rows="5"
+            placeholder="Write Additional Comments here..."
+          ></textarea>
+          <!-- <input
+            type="text"
+            id="comment"
+            placeholder="Write additional comments here"
+          /> -->
+
+          <input type="submit" value="&#9730; Send Feedback" id="submit" />
+        </form>
+      </article>
+    </div>
+  </body>
+</html>
